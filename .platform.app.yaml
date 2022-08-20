@@ -41,5 +41,5 @@ hooks:
 web:
   locations: 
     '/': 
-      root: "\"web\""
+      root: "web"
       passthru: "/index.php"
