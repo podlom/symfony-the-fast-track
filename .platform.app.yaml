@@ -21,7 +21,8 @@ mounts:
   'web/uploads':
     source: local
     source_path: uploads
-    
+  'app/var/cache':
+    source: service    
 
 # The relationships of the application with services or other applications.
 #
