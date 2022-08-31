@@ -24,6 +24,9 @@ mounts:
   'var/cache':
     source: local
     source_path: var/cache
+  'var/log':
+    source: local
+    source_path: var/log
 
 # The relationships of the application with services or other applications.
 #
