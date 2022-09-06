@@ -36,6 +36,10 @@ mounts:
 relationships:
     postgresdatabase: 'dbpostgres:postgresql'
 
+# If using PHP
+runtime:
+    extensions:
+        - pdo_pgsql
 
 hooks:
     build: |
