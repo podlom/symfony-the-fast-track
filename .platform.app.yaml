@@ -48,6 +48,7 @@ hooks:
     deploy: |
       set -e
 
+# Web locations 
 web:
   locations: 
     '/': 
