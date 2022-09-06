@@ -41,14 +41,12 @@ runtime:
     extensions:
         - pdo_pgsql
 
-# Hooks
 hooks:
     build: |
       set -e
     deploy: |
       set -e
-
-# Web locations 
+ 
 web:
   locations: 
     '/': 
