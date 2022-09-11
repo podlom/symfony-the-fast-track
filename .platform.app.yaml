@@ -10,6 +10,11 @@ name: app
 # to find the supported versions for the 'php' type.
 type: 'php:8.0'
 
+# If using PHP
+runtime:
+    extensions:
+        - pdo_pgsql
+
 disk: 128
 
 # The following block defines a single writable directory, 'web/uploads'
@@ -35,11 +40,6 @@ mounts:
 # side is in the form '<service name>:<endpoint name>'.
 relationships:
     postgresdatabase: 'dbpostgres:postgresql'
-
-# If using PHP
-runtime:
-    extensions:
-        - pdo_pgsql
 
 # Hooks
 hooks:
